@@ -14,3 +14,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.c
 
 echo "Install kubent"
 sh -c "$(curl -sSL https://git.io/install-kubent)"
+
+echo "Install K9s"
+curl -sS https://webi.sh/k9s | sh
+cp /root/.local/bin/k9s /usr/local/bin/k9s
