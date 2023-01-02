@@ -16,8 +16,8 @@ gke-gcloud-auth-plugin --version
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 echo "Install kubent"
-sh -c "$(curl -sSL https://git.io/install-kubent)"
+curl -sSL https://git.io/install-kubent | bash
 
 echo "Install K9s"
-curl -sS https://webi.sh/k9s | sh
+curl -sS https://webi.sh/k9s | bash
 cp /root/.local/bin/k9s /usr/local/bin/k9s
